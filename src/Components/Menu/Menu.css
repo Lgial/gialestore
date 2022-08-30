@@ -1,0 +1,36 @@
+.contenedor-menu {
+    display: flex;
+    flex-direction: row;
+    background-color: #011833;
+}
+
+ul li {
+    list-style-type: none;
+}
+ul a {
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    color: #ffffff;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+ul li img {
+    width: 25px;
+    height: 25px;
+    
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+h1 {
+    padding: 5px;
+    margin: 5px;
+    color: #ffffff;
+}
