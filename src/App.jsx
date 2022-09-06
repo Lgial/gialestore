@@ -11,7 +11,7 @@ function App() {
     <div>
       <Navbar/>
       <Lista products={skins}/>
-      <ItemCount/>
+      <ItemCount stock={5} initial={1} onAdd={0}/>
       
     </div>
   );
