@@ -1,0 +1,11 @@
+.counter {
+    width: fit-content;
+    background-color: black;
+    margin: 4px;
+    padding: 4px;
+    text-align: center;
+}
+
+span {
+    color: #ffff;
+}

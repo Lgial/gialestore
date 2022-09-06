@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Menu.css";
+import "./Navbar.css";
 import Carrito from '../../Assets/Carrito.png'
 import logo from '../../Assets/logo.png'
 
