@@ -1,0 +1,10 @@
+.skin {
+    display: block;
+    width: 300px;
+}
+
+.skin img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
