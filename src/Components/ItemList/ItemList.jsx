@@ -1,9 +1,16 @@
-import Item from '../Item';
+import Item from '../Item/Item';
+import './ItemList.css'
 import React from 'react';
 
- const ItemList = ({data = []}) => {
+const ItemList = ({items}) => {
   return (
-    data.map(skin => <Item key={skin.id} data={skin}/>)
+      <div className="row">
+          {items.map(item => (
+              <div key={item.id} className="col-md-4 py-3">
+                  <Item nombre={item.nombre} imagen={item.imagen} precio={item.precio} />
+              </div>)
+          )}
+      </div>
   )
 }
 
