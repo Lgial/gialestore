@@ -1,5 +1,5 @@
 import ItemList from '../ItemList/ItemList';
-import ItemCount from '../ItemCount/ItemCount';
+
 import { useEffect, useState } from 'react';
 
 const ItemListContainer = () => {
@@ -28,7 +28,6 @@ const ItemListContainer = () => {
 
   return (
     <div>
-        <ItemCount stock={5} initial={1} onAdd={0}/>
         <ItemList items={items}/>
     </div>
   )

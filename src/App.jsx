@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from "./Components/Navbar/Navbar";
 import Lista from "./Components/Lista/Lista";
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 
 
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <Lista products={skins}/>
       <ItemListContainer/>
+      <ItemDetailContainer/>
     </div>
   );
 }
