@@ -2,6 +2,7 @@ import React from 'react'
 import "./Navbar.css";
 import Carrito from '../../Assets/Carrito.png'
 import logo from '../../Assets/logo.png'
+import { NavLink } from 'react-router-dom';
 
  const Menu = () => {
   return (
@@ -9,10 +10,10 @@ import logo from '../../Assets/logo.png'
         <h1>gialE's</h1>
         <figure><img className='logo' src={logo} alt="" /></figure>
         <ul>
-            <a href="#"><li>Nosotros</li></a>
-            <a href="#"><li>Productos</li></a>
-            <a href="#"><li>Carrito</li></a>
-            <a href="#"><li ><img src={Carrito} alt="Carrito" /></li></a>
+            <NavLink className="nav_link" to='/'><li>Inicio</li></NavLink>
+            <NavLink className="nav_link" to='/categoria'><li>Skins 1</li></NavLink>
+            <NavLink className="nav_link" to='/categoria'><li>Skins 2</li></NavLink>
+            <NavLink className="nav_link" to='/cart'><li><img src={Carrito} alt="Carrito" /></li></NavLink>
         </ul>
     </div>
   )
