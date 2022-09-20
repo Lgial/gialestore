@@ -1,27 +1,27 @@
 import './App.css';
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Cart from './Components/Cart/Cart'
 import Navbar from "./Components/Navbar/Navbar";
-import Lista from "./Components/Lista/Lista";
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 
 
+
 function App() {
-  const skins = ["AK Fire Serpent", "M4 Howl", "Gut Knife Fade"];
   
   return (
-    <div>
-      <BrowserRouter>
-      <Navbar/>
-      <Routes>
-      <Route path='/' element={<ItemListContainer/>}/>
-      <Route path='/categoria/:categoriaID' element={<ItemListContainer/>}/>
-      <Route path='/detalle' element={<ItemDetailContainer/>}/>
-      </Routes>
-      {<Lista products={skins}/>}
-      </BrowserRouter>
-    </div>
+    <>
+    <BrowserRouter>
+    <Navbar/>
+    <Routes>
+      <Route path='/' element={<ItemListContainer/>} /> 
+      <Route path='/categoria/:categoriaId' element={<ItemListContainer/>} /> 
+      <Route path='/cart' element={<Cart/>} /> 
+      <Route path='/detalle/:detalleId' element={<ItemDetailContainer/>} /> 
+    </Routes>
+    </BrowserRouter>
+      
+    </>
   );
 }
 export default App;

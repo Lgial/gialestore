@@ -10,10 +10,10 @@ import { NavLink } from 'react-router-dom';
         <h1>gialE's</h1>
         <figure><img className='logo' src={logo} alt="" /></figure>
         <ul>
-            <NavLink className="nav_link" to='/'><li>Inicio</li></NavLink>
-            <NavLink className="nav_link" to='/categoria'><li>Skins 1</li></NavLink>
-            <NavLink className="nav_link" to='/categoria'><li>Skins 2</li></NavLink>
-            <NavLink className="nav_link" to='/cart'><li><img src={Carrito} alt="Carrito" /></li></NavLink>
+            <li><NavLink to='/'>Inicio</NavLink></li>
+            <li><NavLink to='/categoria/skins1'>Skins 1</NavLink></li>
+            <li><NavLink to='/categoria/skins2'>Skins 2</NavLink></li>
+            <li><img src={Carrito} alt="Carrito"/></li>
         </ul>
     </div>
   )
