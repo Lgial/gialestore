@@ -13,7 +13,7 @@ import { NavLink } from 'react-router-dom';
             <li><NavLink to='/'>Inicio</NavLink></li>
             <li><NavLink to='/categoria/skins1'>Skins 1</NavLink></li>
             <li><NavLink to='/categoria/skins2'>Skins 2</NavLink></li>
-            <li><img src={Carrito} alt="Carrito"/></li>
+            <li><img src={Carrito} alt="Carrito"/><NavLink to='/cart'>Carrito</NavLink></li>
         </ul>
     </div>
   )
