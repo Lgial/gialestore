@@ -17,7 +17,7 @@ const CartProvider = ({ children }) => {
 				}),
 			);
 		} else {
-			setCart([...cart, { ...item, precio }]);
+			setCart([...cart, { ...item,  }]);
 		}
 	};
 
